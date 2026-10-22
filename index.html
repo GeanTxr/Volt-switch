@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Volt Switch | Loja Virtual</title>
+    
+    <!-- Chamada dos 3 arquivos de CSS separados -->
+    <link rel="stylesheet" href="css/base/base.css">
+    <link rel="stylesheet" href="css/componentes/componentes.css">
+    <link rel="stylesheet" href="css/paginas/paginas.css">
+</head>
+<body>
+
+    <div class="cabecalho-fixo">
+    <!-- CABEÇALHO COM LOGO, BUSCA E CONTA -->
+    <header class="header-principal">
+        <div class="logo">
+            <a href="index.html">VOLT SWITCH <span>Eletrônicos</span></a>
+        </div>
+        
+        <!-- Formulário da barra de pesquisa -->
+        <form class="form-busca">
+            <input type="text" placeholder="Buscar por processadores, placas de vídeo, celulares...">
+            <button type="submit">Buscar</button>
+        </form>
+
+        <!-- Área de Links de Login e Carrinho -->
+        <div class="acoes-usuario">
+            <a href="views/autenticacao/autenticacao.html">Entre ou Cadastre-se</a>
+            <a href="views/carrinho/carrinho.html"><strong>Carrinho (0)</strong></a>
+        </div>
+    </header>
+
+    <!-- MENU DE NAVEGAÇÃO -->
+    <nav class="nav-categorias">
+        <ul class="menu-principal">
+            
+            <!-- Categoria 1 -->
+            <li class="item-menu">
+                <a href="#" class="destaque">⚡ OFERTAS RELÂMPAGO</a>
+            </li>
+
+            <!-- Categoria 2 (Com Submenu de Hardware) -->
+            <li class="item-menu">
+                <a href="#">💻 HARDWARE ▾</a>
+                <ul class="submenu">
+                    <li><a href="#">Processadores</a></li>
+                    <li><a href="#">Placas de Vídeo</a></li>
+                    <li><a href="#">Placas-Mãe</a></li>
+                    <li><a href="#">Memória RAM</a></li>
+                    <li><a href="#">SSDs e HDs</a></li>
+                    <li><a href="#">Fontes de Alimentação</a></li>
+                    <li><a href="#">Gabinetes</a></li>
+                </ul>
+            </li>
+
+            <!-- Categoria 3 (Com Submenu de Periféricos) -->
+            <li class="item-menu">
+                <a href="#">🎧 PERIFÉRICO ▾</a>
+                <ul class="submenu">
+                    <li><a href="#">Teclados Mecânicos</a></li>
+                    <li><a href="#">Mouses Gamers</a></li>
+                    <li><a href="#">Headsets Gamers</a></li>
+                    <li><a href="#">Microfones</a></li>
+                    <li><a href="#">Mousepads</a></li>
+                    <li><a href="#">Webcams</a></li>
+                </ul>
+            </li>
+
+            <!-- Categoria 4 (Com Submenu de Computadores) -->
+            <li class="item-menu">
+                <a href="#">🖥️ COMPUTADORES ▾</a>
+                <ul class="submenu">
+                    <li><a href="#">PCs Gamers Montados</a></li>
+                    <li><a href="#">Notebooks Gamers</a></li>
+                    <li><a href="#">Monitores Gamers</a></li>
+                    <li><a href="#">Monte seu PC</a></li>
+                </ul>
+            </li>
+
+            <!-- Categoria 5 (Com Submenu de Smartphones) -->
+            <li class="item-menu">
+                <a href="#">📱 SMARTPHONES ▾</a>
+                <ul class="submenu">
+                    <li><a href="#">Smartphones Android</a></li>
+                    <li><a href="#">iPhones</a></li>
+                    <li><a href="#">Smartwatches</a></li>
+                    <li><a href="#">Carregadores e Cabos</a></li>
+                </ul>
+            </li>
+
+            <!-- Categoria 6 (Com Submenu de Games) -->
+            <li class="item-menu">
+                <a href="#">🎮 GAMES ▾</a>
+                <ul class="submenu">
+                    <li><a href="#">PlayStation 5</a></li>
+                    <li><a href="#">Xbox Series</a></li>
+                    <li><a href="#">Nintendo Switch</a></li>
+                    <li><a href="#">Controles e Volantes</a></li>
+                    <li><a href="#">Cadeiras Gamer</a></li>
+                </ul>
+            </li>
+
+        </ul>
+    </nav>
+    </div>
+
+    <!-- CONTEÚDO PRINCIPAL -->
+    <main class="container">
+
+        <!-- Seção dos Banners Principais -->
+        <section class="secao-banners">
+            
+            <!-- Banner Grande (Esquerda) -->
+            <a href="views/produtos/produtos.html" class="banner-grande">
+                <img src="img/banners/BannerSuporte.jpg" alt="Destaque Principal">
+            </a>
+
+            <!-- Quadriculado 2x2 dos 4 Banners Menores com Texto Overlaid -->
+            <div class="grid-banners-menores">
+                
+                <!-- Banner 1 -->
+                <a href="views/produtos/produtos.html?categoria=processadores">
+                    <img src="img/banners/Snapdragon-8-Elite-Gen-6-Pro.jpg" alt="Promoção Processadores">
+                    <span class="texto-banner">PROCESSADORES</span>
+                </a>
+
+                <!-- Banner 2 -->
+                <a href="views/produtos/produtos.html?categoria=placas-video">
+                    <img src="img/banners/nvidia-amd-graphics-card.avif" alt="Promoção Placas de Vídeo">
+                    <span class="texto-banner">PLACAS DE VÍDEO</span>
+                </a>
+
+                <!-- Banner 3 -->
+                <a href="views/produtos/produtos.html?categoria=ssds">
+                    <img src="img/banners/Ssd.jpg" alt="Promoção SSDs">
+                    <span class="texto-banner">SSDs E MEMÓRIAS</span>
+                </a>
+
+                <!-- Banner 4 -->
+                <a href="views/produtos/produtos.html?categoria=monitores">
+                    <img src="img/banners/Best-1440p-Monitors.jpg" alt="Promoção Monitores">
+                    <span class="texto-banner">MONITORES GAMER</span>
+                </a>
+
+            </div>
+        </section>
+
+        <!-- Vitrine de Produtos -->
+        <section class="secao-produtos">
+            <h2>🔥 Ofertas Imperdíveis</h2>
+
+            <div class="lista-produtos">
+                
+                <!-- PRODUTO 1 -->
+                <div class="card-produto">
+                    <span class="selo-desconto">-35% OFF</span>
+                    <img src="img/produtos/Ryzen 7 5700X3D 3.0GHz.png" alt="Processador AMD">
+                    <h3>Processador AMD Ryzen 7 5700X3D 3.0GHz</h3>
+                    <div>
+                        <p class="preco-antigo">R$ 1.899,00</p>
+                        <p class="preco-atual">R$ 1.249,90</p>
+                        <p class="texto-pix">à vista no PIX com desconto</p>
+                    </div>
+                    <button class="btn-comprar">Comprar</button>
+                </div>
+
+                <!-- PRODUTO 2 -->
+                <div class="card-produto">
+                    <span class="selo-desconto">-28% OFF</span>
+                    <img src="img/produtos/geforce rtx 4060.jpg" alt="Placa RTX 4060">
+                    <h3>Placa de Vídeo RTX 4060 8GB GDDR6</h3>
+                    <div>
+                        <p class="preco-antigo">R$ 2.499,00</p>
+                        <p class="preco-atual">R$ 1.799,00</p>
+                        <p class="texto-pix">à vista no PIX com desconto</p>
+                    </div>
+                    <button class="btn-comprar">Comprar</button>
+                </div>
+
+                <!-- PRODUTO 3 -->
+                <div class="card-produto">
+                    <span class="selo-desconto">-40% OFF</span>
+                    <img src="img/produtos/SSD 1TB Kingston NVMe M.2 3500MBs.png" alt="SSD 1TB">
+                    <h3>SSD 1TB Kingston NVMe M.2 3500MB/s</h3>
+                    <div>
+                        <p class="preco-antigo">R$ 650,00</p>
+                        <p class="preco-atual">R$ 389,90</p>
+                        <p class="texto-pix">à vista no PIX com desconto</p>
+                    </div>
+                    <button class="btn-comprar">Comprar</button>
+                </div>
+
+                <!-- PRODUTO 4 -->
+                <div class="card-produto">
+                    <span class="selo-desconto">-20% OFF</span>
+                    <img src="img/produtos/Monitor Gamer Curved 24 180Hz 1ms.png" alt="Monitor Gamer">
+                    <h3>Monitor Gamer Curved 24" 180Hz 1ms</h3>
+                    <div>
+                        <p class="preco-antigo">R$ 1.199,00</p>
+                        <p class="preco-atual">R$ 899,00</p>
+                        <p class="texto-pix">à vista no PIX com desconto</p>
+                    </div>
+                    <button class="btn-comprar">Comprar</button>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Vitrine de Produtos 2 -->
+        <section class="secao-produtos">
+            <h2> 🔎 Pesquisas gerais</h2>
+
+            <div class="lista-produtos">
+                
+                <!-- PRODUTO 1 -->
+                <div class="card-produto">
+                    <span class="selo-desconto">-35% OFF</span>
+                    <img src="img/produtos/Ryzen 7 5700X3D 3.0GHz.png" alt="Processador AMD">
+                    <h3>Processador AMD Ryzen 7 5700X3D 3.0GHz</h3>
+                    <div>
+                        <p class="preco-antigo">R$ 1.899,00</p>
+                        <p class="preco-atual">R$ 1.249,90</p>
+                        <p class="texto-pix">à vista no PIX com desconto</p>
+                    </div>
+                    <button class="btn-comprar">Comprar</button>
+                </div>
+
+                <!-- PRODUTO 2 -->
+                <div class="card-produto">
+                    <span class="selo-desconto">-28% OFF</span>
+                    <img src="img/produtos/geforce rtx 4060.jpg" alt="Placa RTX 4060">
+                    <h3>Placa de Vídeo RTX 4060 8GB GDDR6</h3>
+                    <div>
+                        <p class="preco-antigo">R$ 2.499,00</p>
+                        <p class="preco-atual">R$ 1.799,00</p>
+                        <p class="texto-pix">à vista no PIX com desconto</p>
+                    </div>
+                    <button class="btn-comprar">Comprar</button>
+                </div>
+
+                <!-- PRODUTO 3 -->
+                <div class="card-produto">
+                    <span class="selo-desconto">-40% OFF</span>
+                    <img src="img/produtos/SSD 1TB Kingston NVMe M.2 3500MBs.png" alt="SSD 1TB">
+                    <h3>SSD 1TB Kingston NVMe M.2 3500MB/s</h3>
+                    <div>
+                        <p class="preco-antigo">R$ 650,00</p>
+                        <p class="preco-atual">R$ 389,90</p>
+                        <p class="texto-pix">à vista no PIX com desconto</p>
+                    </div>
+                    <button class="btn-comprar">Comprar</button>
+                </div>
+
+                <!-- PRODUTO 4 -->
+                <div class="card-produto">
+                    <span class="selo-desconto">-20% OFF</span>
+                    <img src="img/produtos/Monitor Gamer Curved 24 180Hz 1ms.png" alt="Monitor Gamer">
+                    <h3>Monitor Gamer Curved 24" 180Hz 1ms</h3>
+                    <div>
+                        <p class="preco-antigo">R$ 1.199,00</p>
+                        <p class="preco-atual">R$ 899,00</p>
+                        <p class="texto-pix">à vista no PIX com desconto</p>
+                    </div>
+                    <button class="btn-comprar">Comprar</button>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- SEÇÃO DE BENEFÍCIOS -->
+        <section class="secao-beneficios">
+            <div class="caixa-beneficio">
+                <h4>🚀 Entrega Rápida</h4>
+                <p>Enviamos para todo o Brasil com rastreio</p>
+            </div>
+            <div class="caixa-beneficio">
+                <h4>💳 Até 12x no Cartão</h4>
+                <p>Ou ganhe desconto pagando no PIX</p>
+            </div>
+            <div class="caixa-beneficio">
+                <h4>🛡️ Compra Segura</h4>
+                <p>Garantia oficial em todos os produtos</p>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- RODAPÉ DO SITE -->
+    <footer class="rodape">
+        <div class="rodape-conteudo">
+            <div class="coluna-rodape">
+                <h4>Atendimento</h4>
+                <ul>
+                    <li><a href="views/suporte/suporte.html">Central de Ajuda</a></li>
+                    <li><a href="#">Trocas e Devoluções</a></li>
+                    <li><a href="#">Termos de Uso</a></li>
+                </ul>
+            </div>
+            <div class="coluna-rodape">
+                <h4>Sua Conta</h4>
+                <ul>
+                    <li><a href="views/user/user.html">Meus Pedidos</a></li>
+                    <li><a href="views/carrinho/carrinho.html">Meu Carrinho</a></li>
+                    <li><a href="views/autenticação/autenticação.html">Login / Cadastro</a></li>
+                </ul>
+            </div>
+            <div class="coluna-rodape">
+                <h4>Área do Parceiro</h4>
+                <ul>
+                    <li><a href="views/admin/admin.html">Painel Admin</a></li>
+                    <li><a href="views/fornecedor/fornecedor.html">Painel Fornecedor</a></li>
+                    <li><a href="views/entregadores/entregadores.html">Painel Entregador</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <p>&copy; 2026 Volt Switch Eletrônicos. Todos os direitos reservados. Projeto Acadêmico.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

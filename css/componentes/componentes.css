@@ -1,0 +1,371 @@
+/* --- BARRA DE AVISO NO TOPO --- */
+.top-bar {
+    background-color: #e11d48; /* Vermelho para chamar atenção */
+    color: #ffffff;            /* Texto branco */
+    text-align: center;        /* Centraliza o texto */
+    padding: 8px;              /* Espaçamento interno em cima e embaixo */
+    font-size: 13px;           /* Tamanho de texto menor */
+    font-weight: bold;         /* Texto em negrito */
+}
+
+/* --- CABEÇALHO PRINCIPAL --- */
+.header-principal {
+    background-color: #121214; /* Fundo bem escuro */
+    padding: 15px 20px;        /* Espaço interno */
+    display: flex;             /* Coloca a logo, busca e conta lado a lado */
+    align-items: center;       /* Alinha os itens na altura central */
+    justify-content: space-between; /* Espaça os elementos entre a esquerda e direita */
+}
+
+/* Estilo da Logo */
+.logo a {
+    color: #FF6500;            /* Laranja da marca */
+    text-decoration: none;     /* Tira o sublinhado do link */
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.logo span {
+    color: #ffffff;            /* Segunda palavra da logo em branco */
+}
+
+/* Formulário de Busca */
+.form-busca {
+    display: flex;             /* Junta o campo de texto com o botão de busca */
+    width: 45%;                /* Faz a barra ocupar 45% do cabeçalho */
+}
+
+.form-busca input {
+    width: 100%;               /* O campo ocupa todo o espaço da barra */
+    padding: 10px;             /* Altura do campo de digitação */
+    border: none;              /* Tira as bordas feias padrão */
+    border-radius: 4px 0 0 4px;/* Arredonda só as pontas da esquerda */
+    outline: none;             /* Tira a borda azul ao clicar */
+}
+
+.form-busca button {
+    background-color: #FF6500; /* Botão Laranja */
+    color: #ffffff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 0 4px 4px 0;/* Arredonda só as pontas da direita */
+    cursor: pointer;           /* Faz o cursor virar a mãozinha ao passar o mouse */
+    font-weight: bold;
+}
+
+/* Links do Usuário (Minha Conta / Carrinho) */
+.acoes-usuario {
+    display: flex;             /* Coloca Minha Conta e Carrinho lado a lado */
+    gap: 15px;                 /* Espaço entre eles */
+}
+
+.acoes-usuario a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+/* --- MENU DE NAVEGAÇÃO E DROPDOWN (CASCATA) --- */
+.nav-categorias {
+    background-color: #1f1f23; /* Fundo escuro do menu */
+    padding: 0 20px;
+}
+
+/* Lista principal de categorias */
+.menu-principal {
+    display: flex;             /* Coloca as categorias lado a lado */
+    list-style: none;          /* Tira as bolinhas da lista */
+    gap: 10px;
+}
+
+/* Cada item principal do menu */
+.item-menu {
+    position: relative;        /* Importante para o submenu saber onde deve abrir */
+}
+
+/* Links do menu principal */
+.item-menu > a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: bold;
+    padding: 12px 15px;
+    display: block;            /* Ocupa toda a área do botão */
+}
+
+.item-menu > a:hover {
+    background-color: #27272a; /* Cor de fundo ao passar o mouse */
+    color: #FF6500;            /* Texto fica laranja */
+}
+
+.item-menu a.destaque {
+    color: #FF6500;            /* Cor laranja fixa para Ofertas */
+}
+
+/* --- O SUBMENU (CASCATA QUE FICA ESCONDIDO) --- */
+.submenu {
+    display: none;             /* ESCONDE O SUBMENU POR PADRÃO */
+    position: absolute;        /* Faz o submenu flutuar por cima da página */
+    top: 100%;                 /* Abre exatamente embaixo do botão pai */
+    left: 0;
+    background-color: #27272a; /* Fundo do caixa de subitens */
+    min-width: 200px;          /* Largura mínima do menu suspenso */
+    list-style: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra para dar efeito de elevação */
+    z-index: 100;              /* Garante que o menu fique na frente dos banners */
+    border-radius: 0 0 6px 6px;
+}
+
+.submenu li a {
+    color: #cccccc;
+    text-decoration: none;
+    font-size: 13px;
+    padding: 10px 15px;
+    display: block;
+    border-bottom: 1px solid #333336; /* Linha divisória bem suave entre os itens */
+}
+
+.submenu li a:hover {
+    background-color: #FF6500; /* Fundo fica laranja no item selecionado */
+    color: #ffffff;            /* Texto fica branco */
+}
+
+/* --- MÁGICA DO CSS: MOSTRA O SUBMENU QUANDO PASSA O MOUSE --- */
+.item-menu:hover .submenu {
+    display: block;            /* EXIBE O SUBMENU AO PASSAR O MOUSE */
+}
+/* --- CARD DO PRODUTO --- */
+.card-produto {
+    background-color: #ffffff; /* Card branco */
+    border: 1px solid #e5e7eb;  /* Borda bem suave cinza */
+    border-radius: 8px;        /* Cantos arredondados */
+    padding: 12px;
+    width: 220px;              /* Largura fixa de cada card */
+    position: relative;        /* Necessário para posicionar o selo de desconto no topo */
+    display: flex;
+    flex-direction: column;    /* Organiza o conteúdo do card de cima para baixo */
+    justify-content: space-between; /* Mantém o botão de comprar sempre no fundo do card */
+}
+
+/* Selo de % de Desconto */
+.selo-desconto {
+    position: absolute;        /* Posição livre dentro do card */
+    top: 8px;                  /* Distância do topo */
+    left: 8px;                 /* Distância da esquerda */
+    background-color: #e11d48; /* Fundo vermelho */
+    color: #ffffff;
+    font-size: 11px;
+    font-weight: bold;
+    padding: 3px 6px;
+    border-radius: 4px;
+}
+
+/* Imagem do Produto */
+.card-produto img {
+    width: 100%;
+    height: 140px;             /* Altura padrão para todas as fotos */
+    object-fit: contain;       /* Garante que a foto não fique esticada */
+    margin: 15px 0 10px;
+}
+
+/* Título do Produto */
+.card-produto h3 {
+    font-size: 13px;
+    color: #333333;
+    margin-bottom: 8px;
+    height: 36px;              /* Limita a altura do texto */
+    overflow: hidden;          /* Esconde textos longos para não quebrar o layout */
+}
+
+/* Preços */
+.preco-antigo {
+    font-size: 11px;
+    color: #888888;
+    text-decoration: line-through; /* Risco em cima do preço antigo */
+}
+
+.preco-atual {
+    font-size: 18px;
+    color: #FF6500;            /* Preço em destaque com cor laranja */
+    font-weight: bold;
+}
+
+.texto-pix {
+    font-size: 11px;
+    color: #16a34a;            /* Texto verde indicando desconto no PIX */
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Botão de Comprar */
+.btn-comprar {
+    background-color: #FF6500;
+    color: #ffffff;
+    border: none;
+    padding: 8px;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+    width: 100%;               /* O botão ocupa toda a largura do card */
+}
+
+/* --- CAIXAS DE BENEFÍCIOS (FRETE, GARANTIA, PIX) --- */
+.secao-beneficios {
+    display: flex;             /* Coloca as caixas lado a lado */
+    justify-content: space-between; /* Distribui por igual no espaço */
+    gap: 15px;
+    margin-top: 25px;
+}
+
+.caixa-beneficio {
+    background-color: #ffffff;
+    border: 1px solid #e5e7eb;
+    padding: 15px;
+    border-radius: 8px;
+    width: 100%;               /* Cada uma ocupa o mesmo tamanho */
+    text-align: center;
+}
+
+.caixa-beneficio h4 {
+    color: #FF6500;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+
+.caixa-beneficio p {
+    font-size: 12px;
+    color: #666666;
+}
+
+/* --- RODAPÉ --- */
+.rodape {
+    background-color: #121214;
+    color: #ffffff;
+    padding: 30px 20px 15px;
+    margin-top: 40px;
+}
+
+.rodape-conteudo {
+    display: flex;             /* Coloca as colunas do rodapé lado a lado */
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.coluna-rodape h4 {
+    color: #FF6500;
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+
+.coluna-rodape ul {
+    list-style: none;          /* Sem bolinhas nas listas do rodapé */
+}
+
+.coluna-rodape a {
+    color: #cccccc;
+    text-decoration: none;
+    font-size: 13px;
+    line-height: 2;            /* Dá um espaço na altura entre as linhas */
+}
+
+.copyright {
+    text-align: center;
+    border-top: 1px solid #27272a; /* Linha divisória fina */
+    padding-top: 15px;
+    font-size: 12px;
+    color: #888888;
+}
+
+/* Animação suave para o card inteiro */
+.card-produto {
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+/* Efeito ao passar o mouse por cima do card de produto */
+.card-produto:hover {
+    transform: translateY(-5px); /* Sobe 5 pixels */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.15); /* Cria uma sombra suave embaixo */
+}
+
+/* Animação suave para a cor do botão */
+.btn-comprar {
+    transition: background-color 0.2s;
+}
+
+/* Muda para um laranja mais escuro ao passar o mouse */
+.btn-comprar:hover {
+    background-color: #e05800;
+}
+
+/* Mantem o cabecalho e o menu presos ao topo da tela */
+.cabecalho-fixo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+/* Compensa o espaco ocupado pelo cabecalho fixo */
+body {
+    padding-top: 98px;
+}
+
+@media (max-width: 900px) {
+    .header-principal {
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+
+    .form-busca {
+        width: 100%;
+        order: 3;
+    }
+
+    .nav-categorias {
+        overflow-x: auto;
+    }
+
+    .menu-principal {
+        min-width: max-content;
+    }
+
+    body {
+        padding-top: 145px;
+    }
+}
+
+@media (max-width: 520px) {
+    .header-principal {
+        padding: 12px;
+    }
+
+    .logo a {
+        font-size: 18px;
+    }
+
+    .acoes-usuario {
+        gap: 10px;
+    }
+
+    .acoes-usuario a {
+        font-size: 12px;
+    }
+
+    body {
+        padding-top: 150px;
+    }
+}
+
+.formulario {
+     border: none;
+    box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.5);
+     align-items: center;
+     border-radius: 10px;
+}
+.fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}

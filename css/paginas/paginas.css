@@ -1,0 +1,198 @@
+/* Container que limita a largura do site e centraliza na tela */
+.container {
+    max-width: 1100px;         /* O site não vai passar dessa largura em telas grandes */
+    margin: 20px auto;         /* O 'auto' nas laterais é o segredo para centralizar tudo */
+    padding: 0 10px;
+}
+
+/* Área dos Banners */
+/* Secção geral dos Banners */
+.secao-banners {
+    display: flex;             /* Coloca o banner grande e o quadriculado lado a lado */
+    gap: 15px;                 /* Espaço entre o banner grande e o bloco da direita */
+    margin-bottom: 25px;
+}
+
+/* Banner Grande (Lado Esquerdo) */
+.banner-grande {
+    width: 50%;                /* Ocupa 50% da largura total */
+}
+
+.banner-grande img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;         /* Preenche sem distorcer a imagem */
+    border-radius: 8px;
+}
+
+/* --- QUADRICULADO 2x2 (Lado Direito) --- */
+.grid-banners-menores {
+    width: 50%;                /* Ocupa os outros 50% da largura */
+    display: grid;             /* Activa o modo de grelha */
+    grid-template-columns: 1fr 1fr; /* Cria 2 colunas de tamanho igual */
+    gap: 10px;                 /* Espaçamento entre cada um dos 4 quadrados */
+}
+
+.grid-banners-menores a {
+    display: block;            /* Faz o link ocupar toda a área da imagem */
+    position: relative;        /* OBRIGATÓRIO: Serve de mapa para o texto flutuante */
+    overflow: hidden;          /* Esconde sobras de imagem ao passar o rato */
+    border-radius: 8px;
+}
+
+.grid-banners-menores img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;         /* Ajusta a imagem perfeitamente ao quadrado */
+    border-radius: 8px;
+    transition: transform 0.2s;/* Efeito suave ao passar o cursor */
+}
+
+/* Efeito ao passar o rato por cima dos banners */
+.grid-banners-menores a:hover img {
+    transform: scale(1.04);    /* Dá um pequeno zoom para chamar a atenção */
+}
+
+/* --- TEXTO FLUTUANTE NA FRENTE DO BANNER MENOR --- */
+.texto-banner {
+    position: absolute;            /* Faz o texto flutuar por cima da imagem */
+    bottom: 0;                     /* Cola na parte de baixo da imagem */
+    left: 0;
+    width: 100%;                   /* Ocupa toda a largura do banner */
+    background-color: rgba(0, 0, 0, 0.7); /* Fundo preto semi-transparente para dar leitura */
+    color: #ffffff;                /* Cor da letra branca */
+    text-align: center;            /* Centraliza a palavra */
+    padding: 6px 0;                /* Espaçamento interno em cima e embaixo */
+    font-size: 11px;               /* Tamanho da fonte */
+    font-weight: bold;             /* Texto em negrito */
+    letter-spacing: 0.5px;         /* Pequeno espaço entre as letras */
+}
+
+/* Bloco Branco das Vitrines de Produtos */
+.secao-produtos {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 25px;
+}
+
+.secao-produtos h2 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #FF6500; /* Linha decorativa laranja embaixo do título */
+    padding-bottom: 5px;
+}
+
+/* Organiza a lista de cards lado a lado usando Flexbox */
+.lista-produtos {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;           /* Se não couber na linha, joga o próximo card para a linha de baixo */
+}
+
+/* --- Tela inicial de autenticação --- */
+.area-autenticacao {
+    min-height: calc(100vh - 70px);
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 45px 15px;
+}
+
+.cartao-autenticacao {
+    width: 100%;
+    max-width: 430px;
+    background-color: #ffffff;
+    padding: 30px;
+    border: 1px solid #e5e7eb;
+    border-radius: 10px;
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.07);
+}
+
+.cartao-autenticacao h1 {
+    font-size: 25px;
+    margin-bottom: 8px;
+    color: #222222;
+}
+
+.descricao-autenticacao {
+    color: #666666;
+    font-size: 14px;
+    margin-bottom: 22px;
+}
+
+.abas-autenticacao {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 22px;
+}
+
+.aba {
+    flex: 1;
+    padding: 11px;
+    border: 1px solid #dddddd;
+    border-radius: 5px;
+    background-color: #f5f5f5;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.aba.ativa {
+    color: #ffffff;
+    background-color: #FF6500;
+    border-color: #FF6500;
+}
+
+.campo-autenticacao {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    margin-bottom: 16px;
+}
+
+.campo-autenticacao label {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.campo-autenticacao input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.campo-autenticacao input:focus {
+    outline: 2px solid rgba(255, 101, 0, 0.25);
+    border-color: #FF6500;
+}
+
+.botao-autenticacao {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    background-color: #FF6500;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.botao-autenticacao:hover {
+    background-color: #e85c00;
+}
+
+.mensagem-autenticacao {
+    margin-bottom: 12px;
+    color: #333333;
+    font-size: 13px;
+}
+
+.aviso-academico {
+    margin-top: 20px;
+    color: #777777;
+    font-size: 12px;
+    line-height: 1.5;
+}

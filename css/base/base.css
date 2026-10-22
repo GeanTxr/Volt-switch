@@ -1,0 +1,13 @@
+/* O asterisco (*) seleciona TODOS os elementos da página */
+* {
+    margin: 0;              /* Tira a margem padrão das bordas */
+    padding: 0;             /* Tira o espaçamento interno padrão */
+    box-sizing: border-box; /* Garante que o tamanho das divs não quebre quando adicionamos padding */
+    font-family: Arial, Helvetica, sans-serif; /* Fonte simples e legível */
+}
+
+/* Estilo do fundo e texto principal da página */
+body {
+    background-color: #f2f4f8; /* Fundo cinza bem claro */
+    color: #333333;            /* Cor do texto em cinza escuro */
+}
