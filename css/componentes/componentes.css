@@ -369,3 +369,13 @@ body {
     left: 0;
     width: 100%;
 }
+.carrinho {
+background-color: red;
+width: 700px;
+height: 400px;
+}
+.compra {
+background-color:#121214;
+width: 400px;
+height: 700px;
+}
