@@ -1,0 +1,7 @@
+[build]
+  command = "node scripts/publicar.mjs"
+  publish = "dist"
+
+[dev]
+  framework = "#static"
+  publish = "dist"

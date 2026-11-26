@@ -21,15 +21,15 @@
             </div>
             
             <!-- Formulário da barra de pesquisa -->
-            <form class="form-busca">
-                <input type="text" placeholder="Buscar por processadores, placas de vídeo, celulares...">
+            <form class="form-busca" action="produtos.html">
+                <input type="search" name="busca" aria-label="Buscar produtos" placeholder="Buscar processadores, placas de vídeo, SSDs...">
                 <button type="submit">Buscar</button>
             </form>
 
             <!-- Área de Links de Login e Carrinho -->
             <div class="acoes-usuario">
-                <a href="../../views/autenticacao/autenticacao.html">Entre ou Cadastre-se</a>
-                <a href="../../views/carrinho/carrinho.html"><strong>Carrinho (0)</strong></a>
+                <a href="../autenticacao/autenticacao.html">Entre ou Cadastre-se</a>
+                <a href="../carrinho/carrinho.html"><strong class="link-carrinho">Carrinho (0)</strong></a>
             </div>
         </header>
 
@@ -37,62 +37,62 @@
         <nav class="nav-categorias">
             <ul class="menu-principal">
                 <li class="item-menu">
-                    <a href="#" class="destaque">⚡ OFERTAS RELÂMPAGO</a>
+                    <a href="../../index.html#ofertas" class="destaque">⚡ OFERTAS RELÂMPAGO</a>
                 </li>
 
                 <li class="item-menu">
-                    <a href="#">💻 HARDWARE ▾</a>
+                    <a href="produtos.html">💻 HARDWARE ▾</a>
                     <ul class="submenu">
-                        <li><a href="#">Processadores</a></li>
-                        <li><a href="#">Placas de Vídeo</a></li>
-                        <li><a href="#">Placas-Mãe</a></li>
-                        <li><a href="#">Memória RAM</a></li>
-                        <li><a href="#">SSDs e HDs</a></li>
-                        <li><a href="#">Fontes de Alimentação</a></li>
-                        <li><a href="#">Gabinetes</a></li>
+                        <li><a href="produtos.html?categoria=processadores">Processadores</a></li>
+                        <li><a href="produtos.html?categoria=placas-video">Placas de Vídeo</a></li>
+                        <li><a href="produtos.html?busca=Placas-M%C3%A3e">Placas-Mãe</a></li>
+                        <li><a href="produtos.html?busca=Mem%C3%B3ria%20RAM">Memória RAM</a></li>
+                        <li><a href="produtos.html?categoria=ssds">SSDs e HDs</a></li>
+                        <li><a href="produtos.html?busca=Fontes%20de%20Alimenta%C3%A7%C3%A3o">Fontes de Alimentação</a></li>
+                        <li><a href="produtos.html?busca=Gabinetes">Gabinetes</a></li>
                     </ul>
                 </li>
 
                 <li class="item-menu">
-                    <a href="#">🎧 PERIFÉRICO ▾</a>
+                    <a href="produtos.html?busca=perif%C3%A9ricos">🎧 PERIFÉRICO ▾</a>
                     <ul class="submenu">
-                        <li><a href="#">Teclados Mecânicos</a></li>
-                        <li><a href="#">Mouses Gamers</a></li>
-                        <li><a href="#">Headsets Gamers</a></li>
-                        <li><a href="#">Microfones</a></li>
-                        <li><a href="#">Mousepads</a></li>
-                        <li><a href="#">Webcams</a></li>
+                        <li><a href="produtos.html?busca=Teclados%20Mec%C3%A2nicos">Teclados Mecânicos</a></li>
+                        <li><a href="produtos.html?busca=Mouses%20Gamers">Mouses Gamers</a></li>
+                        <li><a href="produtos.html?busca=Headsets%20Gamers">Headsets Gamers</a></li>
+                        <li><a href="produtos.html?busca=Microfones">Microfones</a></li>
+                        <li><a href="produtos.html?busca=Mousepads">Mousepads</a></li>
+                        <li><a href="produtos.html?busca=Webcams">Webcams</a></li>
                     </ul>
                 </li>
 
                 <li class="item-menu">
-                    <a href="#">🖥️ COMPUTADORES ▾</a>
+                    <a href="produtos.html?categoria=monitores">🖥️ COMPUTADORES ▾</a>
                     <ul class="submenu">
-                        <li><a href="#">PCs Gamers Montados</a></li>
-                        <li><a href="#">Notebooks Gamers</a></li>
-                        <li><a href="#">Monitores Gamers</a></li>
-                        <li><a href="#">Monte seu PC</a></li>
+                        <li><a href="produtos.html?busca=PCs%20Gamers%20Montados">PCs Gamers Montados</a></li>
+                        <li><a href="produtos.html?busca=Notebooks%20Gamers">Notebooks Gamers</a></li>
+                        <li><a href="produtos.html?categoria=monitores">Monitores Gamers</a></li>
+                        <li><a href="produtos.html?busca=Monte%20seu%20PC">Monte seu PC</a></li>
                     </ul>
                 </li>
 
                 <li class="item-menu">
-                    <a href="#">📱 SMARTPHONES ▾</a>
+                    <a href="produtos.html?busca=smartphones">📱 SMARTPHONES ▾</a>
                     <ul class="submenu">
-                        <li><a href="#">Smartphones Android</a></li>
-                        <li><a href="#">iPhones</a></li>
-                        <li><a href="#">Smartwatches</a></li>
-                        <li><a href="#">Carregadores e Cabos</a></li>
+                        <li><a href="produtos.html?busca=Smartphones%20Android">Smartphones Android</a></li>
+                        <li><a href="produtos.html?busca=iPhones">iPhones</a></li>
+                        <li><a href="produtos.html?busca=Smartwatches">Smartwatches</a></li>
+                        <li><a href="produtos.html?busca=Carregadores%20e%20Cabos">Carregadores e Cabos</a></li>
                     </ul>
                 </li>
 
                 <li class="item-menu">
-                    <a href="#">🎮 GAMES ▾</a>
+                    <a href="produtos.html?busca=games">🎮 GAMES ▾</a>
                     <ul class="submenu">
-                        <li><a href="#">PlayStation 5</a></li>
-                        <li><a href="#">Xbox Series</a></li>
-                        <li><a href="#">Nintendo Switch</a></li>
-                        <li><a href="#">Controles e Volantes</a></li>
-                        <li><a href="#">Cadeiras Gamer</a></li>
+                        <li><a href="produtos.html?busca=PlayStation%205">PlayStation 5</a></li>
+                        <li><a href="produtos.html?busca=Xbox%20Series">Xbox Series</a></li>
+                        <li><a href="produtos.html?busca=Nintendo%20Switch">Nintendo Switch</a></li>
+                        <li><a href="produtos.html?busca=Controles%20e%20Volantes">Controles e Volantes</a></li>
+                        <li><a href="produtos.html?busca=Cadeiras%20Gamer">Cadeiras Gamer</a></li>
                     </ul>
                 </li>
             </ul>
@@ -108,7 +108,7 @@
 
         <!-- 2. Nome e informações -->
         <div class="area-info">
-            <span class="selo">-20% OFF</span>
+            <span class="selo">-25% OFF</span>
             <h1>Monitor Gamer Curved 24" 180Hz 1ms</h1>
             <p>Vendido por: <strong>VOLT SWITCH</strong></p>
             <p>Tela curva imersiva com taxa de atualização de 180Hz e tempo de resposta de 1ms.</p>
@@ -119,8 +119,8 @@
             <span class="preco-antigo">R$ 1.199,00</span>
             <strong class="preco-pix">R$ 899,00</strong>
             <span class="aviso-pix">à vista no PIX com desconto</span>
-            <button type="button" class="botao-comprar">Comprar agora</button>
-            <button type="button" class="botao-carrinho">Adicionar ao carrinho</button>
+            <button type="button" class="botao-comprar" onclick='adicionarCarrinho("monitor"); window.location.href="../carrinho/carrinho.html"'>Comprar agora</button>
+            <button type="button" class="botao-carrinho" onclick='adicionarCarrinho("monitor")'>Adicionar ao carrinho</button>
         </div>
     </main>
 
@@ -141,22 +141,26 @@
     </section>
 
     <!-- RODAPÉ -->
-    <footer class="rodape">
+    <section class="secao-produtos produtos-semelhantes"><h2>Produtos semelhantes</h2><div class="lista-produtos">
+    <div class="card-produto"><a href="processador.html"><img src="../../img/produtos/Ryzen 7 5700X3D 3.0GHz.png" alt="Processador"><h3>Processador AMD Ryzen 7 5700X3D</h3></a><p class="preco-atual">R$ 1.249,90</p><button class="btn-comprar" onclick='adicionarCarrinho("processador")'>Adicionar ao carrinho</button></div>
+    <div class="card-produto"><a href="placa-de-video.html"><img src="../../img/produtos/geforce rtx 4060.jpg" alt="Placa de vídeo"><h3>Placa de Vídeo RTX 4060</h3></a><p class="preco-atual">R$ 1.799,00</p><button class="btn-comprar" onclick='adicionarCarrinho("placa")'>Adicionar ao carrinho</button></div>
+    <div class="card-produto"><a href="memoria.html"><img src="../../img/produtos/SSD 1TB Kingston NVMe M.2 3500MBs.png" alt="SSD"><h3>SSD Kingston NVMe 1TB</h3></a><p class="preco-atual">R$ 389,90</p><button class="btn-comprar" onclick='adicionarCarrinho("ssd")'>Adicionar ao carrinho</button></div>
+    </div></section><footer class="rodape">
         <div class="rodape-conteudo">
             <div class="coluna-rodape">
                 <h4>Atendimento</h4>
                 <ul>
                     <li><a href="../../views/suporte/suporte.html">Central de Ajuda</a></li>
-                    <li><a href="#">Trocas e Devoluções</a></li>
-                    <li><a href="#">Termos de Uso</a></li>
+                    <li><a href="../suporte/suporte.html#trocas">Trocas e Devoluções</a></li>
+                    <li><a href="../suporte/suporte.html#termos">Termos de Uso</a></li>
                 </ul>
             </div>
             <div class="coluna-rodape">
                 <h4>Sua Conta</h4>
                 <ul>
-                    <li><a href="../../views/user/user.html">Meus Pedidos</a></li>
-                    <li><a href="../../views/carrinho/carrinho.html">Meu Carrinho</a></li>
-                    <li><a href="../../views/autenticação/autenticação.html">Login / Cadastro</a></li>
+                    <li><a href="../user/user.html">Meus Pedidos</a></li>
+                    <li><a href="../carrinho/carrinho.html">Meu Carrinho</a></li>
+                    <li><a href="../autenticacao/autenticacao.html">Login / Cadastro</a></li>
                 </ul>
             </div>
             <div class="coluna-rodape">
@@ -174,5 +178,6 @@
         </div>
     </footer>
 
+<script type="module" src="../../js/services/services.js"></script>
 </body>
 </html>

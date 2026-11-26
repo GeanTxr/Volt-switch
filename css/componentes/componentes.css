@@ -131,7 +131,8 @@
 }
 
 /* --- MÁGICA DO CSS: MOSTRA O SUBMENU QUANDO PASSA O MOUSE --- */
-.item-menu:hover .submenu {
+.item-menu:hover .submenu,
+.item-menu:focus-within .submenu {
     display: block;            /* EXIBE O SUBMENU AO PASSAR O MOUSE */
 }
 /* --- CARD DO PRODUTO --- */
@@ -145,6 +146,13 @@
     display: flex;
     flex-direction: column;    /* Organiza o conteúdo do card de cima para baixo */
     justify-content: space-between; /* Mantém o botão de comprar sempre no fundo do card */
+}
+
+.card-produto > a,
+.card-produto > a:visited {
+    display: block;
+    color: #333333;
+    text-decoration: none;
 }
 
 /* Selo de % de Desconto */
@@ -311,16 +319,11 @@
 
 /* Mantem o cabecalho e o menu presos ao topo da tela */
 .cabecalho-fixo {
-    position: fixed;
+    position: sticky;
     top: 0;
     left: 0;
     width: 100%;
     z-index: 1000;
-}
-
-/* Compensa o espaco ocupado pelo cabecalho fixo */
-body {
-    padding-top: 98px;
 }
 
 @media (max-width: 900px) {
@@ -334,16 +337,8 @@ body {
         order: 3;
     }
 
-    .nav-categorias {
-        overflow-x: auto;
-    }
-
     .menu-principal {
-        min-width: max-content;
-    }
-
-    body {
-        padding-top: 145px;
+        flex-wrap: wrap;
     }
 }
 
@@ -364,20 +359,13 @@ body {
         font-size: 12px;
     }
 
-    body {
-        padding-top: 150px;
+    .menu-principal .item-menu > a {
+        padding: 8px;
+        font-size: 11px;
     }
 }
 
 .formulario {
-     border: none;
-    box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.5);
-     align-items: center;
-     border-radius: 10px;
-}
-.fixed {
-    position: fixed;
-    top: 0;
-    left: 0;
     width: 100%;
+    max-width: 430px;
 }

@@ -20,15 +20,15 @@
         </div>
         
         <!-- Formulário da barra de pesquisa -->
-        <form class="form-busca">
-            <input type="text" placeholder="Buscar por processadores, placas de vídeo, celulares...">
+        <form class="form-busca" action="views/produtos/produtos.html">
+            <input type="search" name="busca" aria-label="Buscar produtos" placeholder="Buscar processadores, placas de vídeo, SSDs...">
             <button type="submit">Buscar</button>
         </form>
 
         <!-- Área de Links de Login e Carrinho -->
         <div class="acoes-usuario">
             <a href="views/autenticacao/autenticacao.html">Entre ou Cadastre-se</a>
-            <a href="views/carrinho/carrinho.html"><strong>Carrinho (0)</strong></a>
+            <a href="views/carrinho/carrinho.html"><strong class="link-carrinho">Carrinho (0)</strong></a>
         </div>
     </header>
 
@@ -38,67 +38,67 @@
             
             <!-- Categoria 1 -->
             <li class="item-menu">
-                <a href="#" class="destaque">⚡ OFERTAS RELÂMPAGO</a>
+                <a href="#ofertas" class="destaque">⚡ OFERTAS RELÂMPAGO</a>
             </li>
 
             <!-- Categoria 2 (Com Submenu de Hardware) -->
             <li class="item-menu">
-                <a href="#">💻 HARDWARE ▾</a>
+                <a href="views/produtos/produtos.html">💻 HARDWARE ▾</a>
                 <ul class="submenu">
-                    <li><a href="#">Processadores</a></li>
-                    <li><a href="#">Placas de Vídeo</a></li>
-                    <li><a href="#">Placas-Mãe</a></li>
-                    <li><a href="#">Memória RAM</a></li>
-                    <li><a href="#">SSDs e HDs</a></li>
-                    <li><a href="#">Fontes de Alimentação</a></li>
-                    <li><a href="#">Gabinetes</a></li>
+                    <li><a href="views/produtos/produtos.html?categoria=processadores">Processadores</a></li>
+                    <li><a href="views/produtos/produtos.html?categoria=placas-video">Placas de Vídeo</a></li>
+                    <li><a href="views/produtos/produtos.html?busca=Placas-M%C3%A3e">Placas-Mãe</a></li>
+                    <li><a href="views/produtos/produtos.html?busca=Mem%C3%B3ria%20RAM">Memória RAM</a></li>
+                    <li><a href="views/produtos/produtos.html?categoria=ssds">SSDs e HDs</a></li>
+                    <li><a href="views/produtos/produtos.html?busca=Fontes%20de%20Alimenta%C3%A7%C3%A3o">Fontes de Alimentação</a></li>
+                    <li><a href="views/produtos/produtos.html?busca=Gabinetes">Gabinetes</a></li>
                 </ul>
             </li>
 
             <!-- Categoria 3 (Com Submenu de Periféricos) -->
             <li class="item-menu">
-                <a href="#">🎧 PERIFÉRICO ▾</a>
+                <a href="views/produtos/produtos.html?busca=perif%C3%A9ricos">🎧 PERIFÉRICO ▾</a>
                 <ul class="submenu">
-                    <li><a href="#">Teclados Mecânicos</a></li>
-                    <li><a href="#">Mouses Gamers</a></li>
-                    <li><a href="#">Headsets Gamers</a></li>
-                    <li><a href="#">Microfones</a></li>
-                    <li><a href="#">Mousepads</a></li>
-                    <li><a href="#">Webcams</a></li>
+                    <li><a href="views/produtos/produtos.html?busca=Teclados%20Mec%C3%A2nicos">Teclados Mecânicos</a></li>
+                    <li><a href="views/produtos/produtos.html?busca=Mouses%20Gamers">Mouses Gamers</a></li>
+                    <li><a href="views/produtos/produtos.html?busca=Headsets%20Gamers">Headsets Gamers</a></li>
+                    <li><a href="views/produtos/produtos.html?busca=Microfones">Microfones</a></li>
+                    <li><a href="views/produtos/produtos.html?busca=Mousepads">Mousepads</a></li>
+                    <li><a href="views/produtos/produtos.html?busca=Webcams">Webcams</a></li>
                 </ul>
             </li>
 
             <!-- Categoria 4 (Com Submenu de Computadores) -->
             <li class="item-menu">
-                <a href="#">🖥️ COMPUTADORES ▾</a>
+                <a href="views/produtos/produtos.html?categoria=monitores">🖥️ COMPUTADORES ▾</a>
                 <ul class="submenu">
-                    <li><a href="#">PCs Gamers Montados</a></li>
-                    <li><a href="#">Notebooks Gamers</a></li>
-                    <li><a href="#">Monitores Gamers</a></li>
-                    <li><a href="#">Monte seu PC</a></li>
+                    <li><a href="views/produtos/produtos.html?busca=PCs%20Gamers%20Montados">PCs Gamers Montados</a></li>
+                    <li><a href="views/produtos/produtos.html?busca=Notebooks%20Gamers">Notebooks Gamers</a></li>
+                    <li><a href="views/produtos/produtos.html?categoria=monitores">Monitores Gamers</a></li>
+                    <li><a href="views/produtos/produtos.html?busca=Monte%20seu%20PC">Monte seu PC</a></li>
                 </ul>
             </li>
 
             <!-- Categoria 5 (Com Submenu de Smartphones) -->
             <li class="item-menu">
-                <a href="#">📱 SMARTPHONES ▾</a>
+                <a href="views/produtos/produtos.html?busca=smartphones">📱 SMARTPHONES ▾</a>
                 <ul class="submenu">
-                    <li><a href="#">Smartphones Android</a></li>
-                    <li><a href="#">iPhones</a></li>
-                    <li><a href="#">Smartwatches</a></li>
-                    <li><a href="#">Carregadores e Cabos</a></li>
+                    <li><a href="views/produtos/produtos.html?busca=Smartphones%20Android">Smartphones Android</a></li>
+                    <li><a href="views/produtos/produtos.html?busca=iPhones">iPhones</a></li>
+                    <li><a href="views/produtos/produtos.html?busca=Smartwatches">Smartwatches</a></li>
+                    <li><a href="views/produtos/produtos.html?busca=Carregadores%20e%20Cabos">Carregadores e Cabos</a></li>
                 </ul>
             </li>
 
             <!-- Categoria 6 (Com Submenu de Games) -->
             <li class="item-menu">
-                <a href="#">🎮 GAMES ▾</a>
+                <a href="views/produtos/produtos.html?busca=games">🎮 GAMES ▾</a>
                 <ul class="submenu">
-                    <li><a href="#">PlayStation 5</a></li>
-                    <li><a href="#">Xbox Series</a></li>
-                    <li><a href="#">Nintendo Switch</a></li>
-                    <li><a href="#">Controles e Volantes</a></li>
-                    <li><a href="#">Cadeiras Gamer</a></li>
+                    <li><a href="views/produtos/produtos.html?busca=PlayStation%205">PlayStation 5</a></li>
+                    <li><a href="views/produtos/produtos.html?busca=Xbox%20Series">Xbox Series</a></li>
+                    <li><a href="views/produtos/produtos.html?busca=Nintendo%20Switch">Nintendo Switch</a></li>
+                    <li><a href="views/produtos/produtos.html?busca=Controles%20e%20Volantes">Controles e Volantes</a></li>
+                    <li><a href="views/produtos/produtos.html?busca=Cadeiras%20Gamer">Cadeiras Gamer</a></li>
                 </ul>
             </li>
 
@@ -148,7 +148,7 @@
         </section>
 
         <!-- Vitrine de Produtos -->
-        <section class="secao-produtos">
+        <section class="secao-produtos" id="ofertas">
             <h2>🔥 Ofertas Imperdíveis</h2>
 
             <div class="lista-produtos">
@@ -166,9 +166,7 @@
         <p class="preco-atual">R$ 1.249,90</p>
         <p class="texto-pix">à vista no PIX com desconto</p>
     </div>
-    <a href="views/carrinho/carrinho.html">
-        <button class="btn-comprar">Comprar</button>
-    </a>
+    <button class="btn-comprar" onclick='adicionarCarrinho("processador")'>Adicionar ao carrinho</button>
 </div>
 
                 <!-- PRODUTO 2 -->
@@ -183,9 +181,7 @@
                         <p class="preco-atual">R$ 1.799,00</p>
                         <p class="texto-pix">à vista no PIX com desconto</p>
                     </div>
-                    <a href="views/carrinho/carrinho.html">
-                        <button class="btn-comprar">Comprar</button>
-                    </a>
+                    <button class="btn-comprar" onclick='adicionarCarrinho("placa")'>Adicionar ao carrinho</button>
                 </div>
 
                 <!-- PRODUTO 3 -->
@@ -200,15 +196,13 @@
                         <p class="preco-atual">R$ 389,90</p>
                         <p class="texto-pix">à vista no PIX com desconto</p>
                     </div>
-                    <a href="views/carrinho/carrinho.html">
-                        <button class="btn-comprar">Comprar</button>
-                    </a>
+                    <button class="btn-comprar" onclick='adicionarCarrinho("ssd")'>Adicionar ao carrinho</button>
                 </div>
 
                 <!-- PRODUTO 4 -->
                 <div class="card-produto">
                     <a href="views/produtos/monitor.html">
-                    <span class="selo-desconto">-20% OFF</span>
+                    <span class="selo-desconto">-25% OFF</span>
                     <img src="img/produtos/Monitor Gamer Curved 24 180Hz 1ms.png" alt="Monitor Gamer">
                     <h3>Monitor Gamer Curved 24" 180Hz 1ms</h3>
                 </a>
@@ -217,79 +211,49 @@
                         <p class="preco-atual">R$ 899,00</p>
                         <p class="texto-pix">à vista no PIX com desconto</p>
                     </div>
-                    <a href="views/carrinho/carrinho.html">
-                    <button class="btn-comprar">Comprar</button>
-                </a>
+                    <button class="btn-comprar" onclick='adicionarCarrinho("monitor")'>Adicionar ao carrinho</button>
                 </div>
 
             </div>
         </section>
 
-        <!-- Vitrine de Produtos 2 -->
-        <section class="secao-produtos">
-            <h2> 🔎 Pesquisas gerais</h2>
-
+        <section class="secao-produtos" id="vitrine-catalogo" aria-labelledby="titulo-vitrine">
+            <h2 id="titulo-vitrine">🔎 Pesquisas gerais</h2>
             <div class="lista-produtos">
-                
-                <!-- PRODUTO 1 -->
-                <div class="card-produto">
-                    <a href="views/produtos/processador.html">">
-                    <span class="selo-desconto">-35% OFF</span>
-                    <img src="img/produtos/Ryzen 7 5700X3D 3.0GHz.png" alt="Processador AMD">
-                    <h3>Processador AMD Ryzen 7 5700X3D 3.0GHz</h3>
-                    <div>
-                        <p class="preco-antigo">R$ 1.899,00</p>
-                        <p class="preco-atual">R$ 1.249,90</p>
-                        <p class="texto-pix">à vista no PIX com desconto</p>
-                    </div>
-                    <button class="btn-comprar">Comprar</button>
-                </div>
-
-                <!-- PRODUTO 2 -->
-                <div class="card-produto">
-                     <a href="views/produtos/placa-de-video.html"></a>
-                    <span class="selo-desconto">-28% OFF</span>
-                    <img src="img/produtos/geforce rtx 4060.jpg" alt="Placa RTX 4060">
-                    <h3>Placa de Vídeo RTX 4060 8GB GDDR6</h3>
-                    <div>
-                        <p class="preco-antigo">R$ 2.499,00</p>
-                        <p class="preco-atual">R$ 1.799,00</p>
-                        <p class="texto-pix">à vista no PIX com desconto</p>
-                    </div>
-                    <button class="btn-comprar">Comprar</button>
-                </div>
-
-                <!-- PRODUTO 3 -->
-                <div class="card-produto">
-                     <a href="views/produtos/memoria.html"></a>
-                    <span class="selo-desconto">-40% OFF</span>
-                    <img src="img/produtos/SSD 1TB Kingston NVMe M.2 3500MBs.png" alt="SSD 1TB">
-                    <h3>SSD 1TB Kingston NVMe M.2 3500MB/s</h3>
-                    <div>
-                        <p class="preco-antigo">R$ 650,00</p>
-                        <p class="preco-atual">R$ 389,90</p>
-                        <p class="texto-pix">à vista no PIX com desconto</p>
-                    </div>
-                    <button class="btn-comprar">Comprar</button>
-                </div>
-
-                <!-- PRODUTO 4 -->
-                <div class="card-produto">
-                     <a href="views/produtos/monitor.html"></a>
-                    <span class="selo-desconto">-20% OFF</span>
-                    <img src="img/produtos/Monitor Gamer Curved 24 180Hz 1ms.png" alt="Monitor Gamer">
-                    <h3>Monitor Gamer Curved 24" 180Hz 1ms</h3>
-                    <div>
-                        <p class="preco-antigo">R$ 1.199,00</p>
-                        <p class="preco-atual">R$ 899,00</p>
-                        <p class="texto-pix">à vista no PIX com desconto</p>
-                    </div>
-                    <button class="btn-comprar">Comprar</button>
-                </div>
-
+                <article class="card-produto">
+                    <a href="/views/produtos/processador.html">
+                        <img src="img/produtos/Ryzen 7 5700X3D 3.0GHz.png" alt="">
+                        <h3>Processador AMD Ryzen 7 5700X3D</h3>
+                    </a>
+                    <p class="preco-atual">R$ 1.249,90</p>
+                    <button type="button" class="btn-comprar" onclick='adicionarCarrinho("processador")'>Adicionar ao carrinho</button>
+                </article>
+                <article class="card-produto">
+                    <a href="/views/produtos/placa-de-video.html">
+                        <img src="img/produtos/geforce rtx 4060.jpg" alt="">
+                        <h3>Placa de Vídeo RTX 4060</h3>
+                    </a>
+                    <p class="preco-atual">R$ 1.799,00</p>
+                    <button type="button" class="btn-comprar" onclick='adicionarCarrinho("placa")'>Adicionar ao carrinho</button>
+                </article>
+                <article class="card-produto">
+                    <a href="/views/produtos/memoria.html">
+                        <img src="img/produtos/SSD 1TB Kingston NVMe M.2 3500MBs.png" alt="">
+                        <h3>SSD Kingston NVMe 1TB</h3>
+                    </a>
+                    <p class="preco-atual">R$ 389,90</p>
+                    <button type="button" class="btn-comprar" onclick='adicionarCarrinho("ssd")'>Adicionar ao carrinho</button>
+                </article>
+                <article class="card-produto">
+                    <a href="/views/produtos/monitor.html">
+                        <img src="img/produtos/Monitor Gamer Curved 24 180Hz 1ms.png" alt="">
+                        <h3>Monitor Gamer Curved 24 180Hz 1ms</h3>
+                    </a>
+                    <p class="preco-atual">R$ 899,00</p>
+                    <button type="button" class="btn-comprar" onclick='adicionarCarrinho("monitor")'>Adicionar ao carrinho</button>
+                </article>
             </div>
         </section>
-
         <!-- SEÇÃO DE BENEFÍCIOS -->
         <section class="secao-beneficios">
             <div class="caixa-beneficio">
@@ -315,8 +279,8 @@
                 <h4>Atendimento</h4>
                 <ul>
                     <li><a href="views/suporte/suporte.html">Central de Ajuda</a></li>
-                    <li><a href="#">Trocas e Devoluções</a></li>
-                    <li><a href="#">Termos de Uso</a></li>
+                    <li><a href="views/suporte/suporte.html#trocas">Trocas e Devoluções</a></li>
+                    <li><a href="views/suporte/suporte.html#termos">Termos de Uso</a></li>
                 </ul>
             </div>
             <div class="coluna-rodape">
@@ -343,5 +307,7 @@
         </div>
     </footer>
 
+<script type="module" src="/js/usuario/callback.js"></script>
+<script type="module" src="js/services/services.js"></script>
 </body>
 </html>

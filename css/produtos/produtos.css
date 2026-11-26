@@ -134,3 +134,9 @@
     font-size: 15px;
     color: #444444;
   }
+@media (max-width: 850px) {
+    .caixa-produto { flex-wrap: wrap; padding: 55px 25px !important; }
+    .area-preco { width: 100%; }
+}
+.area-foto img { max-width: 100%; height: auto; object-fit: contain; }
+.botao-comprar:hover, .botao-carrinho:hover { opacity: 0.88; }

@@ -1,0 +1,130 @@
+{
+  "version": "8",
+  "dialect": "postgres",
+  "id": "9ca46259-870d-42be-a308-9938769dbb2e",
+  "prevIds": [
+    "00000000-0000-0000-0000-000000000000"
+  ],
+  "ddl": [
+    {
+      "isRlsEnabled": false,
+      "name": "pedidos",
+      "entityType": "tables",
+      "schema": "public"
+    },
+    {
+      "type": "serial",
+      "typeSchema": null,
+      "notNull": true,
+      "dimensions": 0,
+      "default": null,
+      "generated": null,
+      "identity": null,
+      "name": "numero",
+      "entityType": "columns",
+      "schema": "public",
+      "table": "pedidos"
+    },
+    {
+      "type": "text",
+      "typeSchema": null,
+      "notNull": true,
+      "dimensions": 0,
+      "default": null,
+      "generated": null,
+      "identity": null,
+      "name": "cliente_id",
+      "entityType": "columns",
+      "schema": "public",
+      "table": "pedidos"
+    },
+    {
+      "type": "uuid",
+      "typeSchema": null,
+      "notNull": true,
+      "dimensions": 0,
+      "default": null,
+      "generated": null,
+      "identity": null,
+      "name": "chave",
+      "entityType": "columns",
+      "schema": "public",
+      "table": "pedidos"
+    },
+    {
+      "type": "jsonb",
+      "typeSchema": null,
+      "notNull": true,
+      "dimensions": 0,
+      "default": null,
+      "generated": null,
+      "identity": null,
+      "name": "itens",
+      "entityType": "columns",
+      "schema": "public",
+      "table": "pedidos"
+    },
+    {
+      "type": "integer",
+      "typeSchema": null,
+      "notNull": true,
+      "dimensions": 0,
+      "default": null,
+      "generated": null,
+      "identity": null,
+      "name": "total_centavos",
+      "entityType": "columns",
+      "schema": "public",
+      "table": "pedidos"
+    },
+    {
+      "type": "text",
+      "typeSchema": null,
+      "notNull": true,
+      "dimensions": 0,
+      "default": "'Aguardando separação'",
+      "generated": null,
+      "identity": null,
+      "name": "status",
+      "entityType": "columns",
+      "schema": "public",
+      "table": "pedidos"
+    },
+    {
+      "type": "timestamp with time zone",
+      "typeSchema": null,
+      "notNull": true,
+      "dimensions": 0,
+      "default": "now()",
+      "generated": null,
+      "identity": null,
+      "name": "criado_em",
+      "entityType": "columns",
+      "schema": "public",
+      "table": "pedidos"
+    },
+    {
+      "columns": [
+        "numero"
+      ],
+      "nameExplicit": false,
+      "name": "pedidos_pkey",
+      "schema": "public",
+      "table": "pedidos",
+      "entityType": "pks"
+    },
+    {
+      "nameExplicit": false,
+      "columns": [
+        "cliente_id",
+        "chave"
+      ],
+      "nullsNotDistinct": false,
+      "name": "pedidos_cliente_id_chave_unique",
+      "entityType": "uniques",
+      "schema": "public",
+      "table": "pedidos"
+    }
+  ],
+  "renames": []
+}

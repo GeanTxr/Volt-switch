@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painel da loja | Volt Switch</title>
+    <link rel="stylesheet" href="../../css/base/base.css">
+    <link rel="stylesheet" href="../../css/componentes/componentes.css">
+    <link rel="stylesheet" href="../../css/paginas/paginas.css">
+    <link rel="stylesheet" href="../../css/fornecedor/fornecedor.css">
+</head>
+<body>
+    <header class="header-principal">
+        <div class="logo"><a href="../../index.html">VOLT SWITCH <span>Eletrônicos</span></a></div>
+        <div class="acoes-usuario"><a href="../../index.html">Voltar à loja</a></div>
+    </header>
+    <main class="painel-conteudo">
+        <h1>Painel da loja</h1>
+        <p>Consulte o catálogo e libere os pedidos já separados para entrega.</p>
+        <div id="perfil-painel"></div>
+        <nav id="atalhos-painel" aria-label="Áreas disponíveis"></nav>
+        <button id="sair-conta" type="button" hidden>Sair da conta</button>
+        <p id="estado-painel" class="texto-resultados" role="status">Carregando painel…</p>
+        <div id="conteudo-painel" hidden>
+            <h2>Produtos do catálogo</h2>
+            <ul id="catalogo-loja"></ul>
+            <h2>Pedidos para separar</h2>
+            <div id="pedidos-painel"></div>
+        </div>
+    </main>
+    <footer class="rodape"><div class="copyright">© 2026 Volt Switch Eletrônicos. Projeto Acadêmico.</div></footer>
+    <script type="module" src="../../js/fornecedor/fornecedor.js"></script>
+</body>
+</html>
