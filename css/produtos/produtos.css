@@ -1,0 +1,136 @@
+.caixa-produto {
+    width: 95% !important;         
+    max-width: 1650px !important;    /* Zé algo deu pau aqui que nao queria mudar o tamanho de jeito nenhum ae tem esse important ae*/
+    margin: 24px auto !important;   
+    padding: 110px 48px !important; 
+    background: #ffffff;
+    border-radius: 10px;
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    box-sizing: border-box;
+  }
+  
+  .area-foto {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .area-foto img {
+    width: 360px;               
+  }
+  
+  .area-info {
+    flex: 1.4;                 
+  }
+  .area-info h1 {
+    font-size: 26px;
+    margin: 12px 0;
+  }
+  
+  .selo {
+    background: #ff6600;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 13px;
+    font-weight: bold;
+  }
+  
+  .area-preco {
+    width: 320px;              
+    border: 1px solid #e5e5e5;
+    padding: 25px;
+    border-radius: 8px;
+    background: #fafafa;
+  }
+  
+  .preco-antigo {
+    text-decoration: line-through;
+    color: #888;
+    font-size: 15px;
+    display: block;
+  }
+  
+  .preco-pix {
+    color: #ff6600;
+    font-size: 36px;
+    display: block;
+    margin: 6px 0;
+  }
+  
+  .aviso-pix {
+    color: #009944;
+    font-size: 14px;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 18px;
+  }
+  
+  .botao-comprar {
+    width: 100%;
+    background: #ff6600;
+    color: #fff;
+    border: none;
+    padding: 14px;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  .botao-carrinho {
+    width: 100%;
+    background: #ffffff;
+    color: #ff6600;
+    border: 2px solid #ff6600;
+    padding: 12px;
+    border-radius: 6px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;         
+  }
+  
+  /* 💥😜😜 Descrição abaixo 😜😜💥 */
+  
+  .descricao-produto {
+    width: 95% !important;
+    max-width: 1650px !important;
+    margin: 24px auto 36px auto !important;
+    padding: 45px 48px !important;
+    background: #ffffff;
+    border-radius: 10px;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    color: #222222;
+  }
+  
+  .descricao-produto h2 {
+    margin-top: 0;
+    margin-bottom: 18px;
+    font-size: 20px;
+    border-bottom: 1px solid #eeeeee;
+    padding-bottom: 12px;
+  }
+  
+  .descricao-produto h3 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 18px;
+  }
+  
+  .descricao-produto h4 {
+    margin-top: 22px;
+    margin-bottom: 8px;
+    font-size: 16px;
+  }
+  
+  .descricao-produto p {
+    margin-top: 0;
+    margin-bottom: 12px;
+    line-height: 1.6;
+    font-size: 15px;
+    color: #444444;
+  }
