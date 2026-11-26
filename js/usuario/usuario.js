@@ -48,6 +48,11 @@ formulario.addEventListener("submit", async evento => {
         if (modo === "convite") {
             await redirecionarConta(await acceptInvite(convite, senha.value));
         } else if (modo === "cadastro") {
+            if (!nome.value.trim()) {
+                mensagem.textContent = "Informe seu nome completo.";
+                nome.focus();
+                return;
+            }
             const usuario = await signup(email.value.trim(), senha.value, { full_name: nome.value.trim(), perfil_solicitado: tipo.value });
             senha.value = "";
             if (usuario.emailVerified) await redirecionarConta(usuario);

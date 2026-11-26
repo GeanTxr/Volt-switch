@@ -1,0 +1,203 @@
+/* --- Variáveis e base --- */
+:root {
+  --vs-primaria: #ff6600;
+  --vs-primaria-escura: #d95200;
+  --vs-fundo: #fffaf5;
+  --vs-superficie: #ffffff;
+  --vs-texto: #1c1917;
+  --vs-texto-suave: #57534e;
+  --vs-borda: #ffd8b8;
+  --vs-destaque-claro: #fff0e5;
+  --vs-largura-container: 960px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  background-color: var(--vs-fundo);
+  color: var(--vs-texto);
+  line-height: 1.6;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* --- Cabeçalho --- */
+.header-principal {
+  background-color: var(--vs-superficie);
+  border-bottom: 1px solid var(--vs-borda);
+  padding: 1rem 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.logo a {
+  font-size: 1.2rem;
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  color: var(--vs-texto);
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.logo span {
+  font-weight: 600;
+  color: var(--vs-primaria);
+}
+
+.acoes-usuario a {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--vs-primaria-escura);
+  background-color: var(--vs-destaque-claro);
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.acoes-usuario a:hover {
+  background-color: var(--vs-primaria);
+  color: #ffffff;
+}
+
+/* --- Links e botões --- */
+.link-texto {
+  color: var(--vs-primaria-escura);
+  font-weight: 600;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.2s ease;
+}
+
+.link-texto:hover {
+  border-bottom-color: var(--vs-primaria-escura);
+}
+
+.botao-link {
+  display: inline-block;
+  margin-top: 2rem;
+  background-color: var(--vs-primaria);
+  color: #ffffff;
+  font-size: 0.95rem;
+  font-weight: 600;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  text-decoration: none;
+  box-shadow: 0 2px 6px rgba(255, 102, 0, 0.25);
+  transition: background-color 0.2s ease, transform 0.15s ease;
+}
+
+.botao-link:hover {
+  background-color: var(--vs-primaria-escura);
+  transform: translateY(-1px);
+}
+
+/* --- Conteúdo e cards de ajuda --- */
+.painel-conteudo {
+  width: 100%;
+  max-width: var(--vs-largura-container);
+  margin: 0 auto;
+  padding: 2.5rem 1.5rem 4rem;
+  flex: 1;
+}
+
+.painel-conteudo h1 {
+  font-size: 2rem;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  color: var(--vs-texto);
+  margin-bottom: 0.5rem;
+}
+
+.painel-conteudo > h1 + p {
+  font-size: 1.05rem;
+  color: var(--vs-texto-suave);
+  margin-bottom: 2rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid var(--vs-borda);
+}
+
+.painel-conteudo h2 {
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: var(--vs-texto);
+  background-color: var(--vs-superficie);
+  border: 1px solid var(--vs-borda);
+  border-bottom: none;
+  border-left: 4px solid var(--vs-primaria);
+  border-radius: 10px 10px 0 0;
+  padding: 1.25rem 1.5rem 0.4rem;
+  margin-top: 1.25rem;
+  scroll-margin-top: 5.5rem;
+}
+
+.painel-conteudo h2 + p {
+  font-size: 0.95rem;
+  color: var(--vs-texto-suave);
+  background-color: var(--vs-superficie);
+  border: 1px solid var(--vs-borda);
+  border-top: none;
+  border-left: 4px solid var(--vs-primaria);
+  border-radius: 0 0 10px 10px;
+  padding: 0 1.5rem 1.25rem;
+  box-shadow: 0 1px 3px rgba(28, 25, 23, 0.05);
+}
+
+.painel-conteudo h2:target,
+.painel-conteudo h2:target + p {
+  background-color: var(--vs-destaque-claro);
+  border-color: var(--vs-primaria);
+}
+
+/* --- Rodapé --- */
+.rodape {
+  background-color: var(--vs-superficie);
+  border-top: 1px solid var(--vs-borda);
+  padding: 1.5rem 5%;
+  text-align: center;
+  margin-top: auto;
+}
+
+.copyright {
+  font-size: 0.85rem;
+  color: var(--vs-texto-suave);
+}
+
+/* --- Responsivo --- */
+@media (max-width: 640px) {
+  .header-principal {
+    padding: 0.875rem 1rem;
+  }
+
+  .logo a {
+    font-size: 1rem;
+  }
+
+  .painel-conteudo {
+    padding: 1.75rem 1rem 3rem;
+  }
+
+  .painel-conteudo h1 {
+    font-size: 1.65rem;
+  }
+
+  .painel-conteudo h2 {
+    padding: 1rem 1.15rem 0.35rem;
+  }
+
+  .painel-conteudo h2 + p {
+    padding: 0 1.15rem 1rem;
+  }
+}

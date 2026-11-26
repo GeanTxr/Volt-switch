@@ -22,7 +22,9 @@ async function identificar(contexto: Context) {
     const sessao = contexto.cookies.get("nf_jwt");
     if (!sessao) return null;
     const url = new URL("/.netlify/identity/user", contexto.site.url || process.env.URL);
-    url.protocol = "https:";
+    if (url.hostname !== "localhost" && url.hostname !== "127.0.0.1") {
+        url.protocol = "https:";
+    }
     const resposta = await fetch(url, {
         headers: { Authorization: `Bearer ${sessao}` },
         signal: AbortSignal.timeout(5000),

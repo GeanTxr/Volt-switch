@@ -1,4 +1,4 @@
-/* O asterisco (*) seleciona TODOS os elementos da página */
+/* Descobri que o asterisco seleciona todos os elementos da pagina */
 * {
     margin: 0;              /* Tira a margem padrão das bordas */
     padding: 0;             /* Tira o espaçamento interno padrão */
